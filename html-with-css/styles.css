@@ -1,0 +1,139 @@
+/* Week 2 coding assignment
+1) use external css for styling only
+2) every element must be styled
+3) create style rules using class, id and element selectors*/
+
+body {
+    background-color: #d7cec7;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+ /* elements */
+
+ h1 {
+    text-shadow: 2px 7px 5px #565656;
+ }
+
+ h2 {
+    background-color: #c09f80; 
+    width:max-content;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+ }
+
+ h3 {
+    background-color: #565656;
+    color: white;
+    width:max-content;
+    font-style: italic;
+}
+
+nav {
+    background-color: #76323f;
+}
+
+img {
+    height: 240px;
+    width: 480px;
+}
+
+/* Class selectors */
+
+.navbar ul {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    list-style-type: none;
+}
+.navbar a {
+    color: beige;
+    text-decoration: none;
+    margin-right: 1em;
+    font-size: 24px;
+    box-shadow: 2px 2px burlywood;
+}
+
+.navbar a:hover {
+    color: rgb(157, 6, 114);
+}
+
+.navbar a:active {
+    background-color: rgb(0, 128, 117);
+    border-radius: 5%;
+}
+
+/* id selectors */
+
+#favelist {
+    display:flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+}
+
+#favelist li {
+    list-style-type: none;
+}
+
+/* Table */
+
+table {
+    margin: 15px;
+    background-color: rgb(212, 212, 212);
+    border: 3px solid black;
+}
+
+table caption {
+    background-color: rgb(255, 226, 226);
+    font-size: 25px;
+    font-weight: 400;
+    border: 3px solid black;
+    border-bottom: none;
+}
+
+th, td {
+    padding-left: 15px;
+    padding-right: 10px;
+    margin: auto;
+}
+
+tr:hover {
+    color: white;
+    background-color: purple;
+}
+
+th {
+    background-color: darkblue;
+    color: white;
+}
+
+/* Form */
+
+form {
+    display:flex;
+    flex-direction: column;
+    width: 350px;
+    height: 250px;
+    border: 10px solid hsla(242, 30%, 75%, 0.41);
+    justify-content: space-around;
+    background: purple;
+}
+
+form label {
+    color: white;
+    font-weight: 600;
+    font-size: medium;
+    align-self: center;
+}
+
+form input {
+    margin-bottom: 1em;
+    width: 250px;
+    align-self: center;
+}
+
+form button {
+    margin-bottom:1em;
+    font-weight: 600;
+    font-size: 20px;
+    width: 200px;
+    align-self: center;
+}
