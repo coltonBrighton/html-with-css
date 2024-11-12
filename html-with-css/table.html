@@ -8,89 +8,60 @@
 <!DOCTYPE html>
 
 <html lang="en">
-
-<head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
     <!-- link tag to css document -->
-    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-</head>
+  <body>
+    <!-- create a navigation bar to link between index, table, and form pages! -->
 
-<body>
-    
-<!-- create a navigation bar to link between index, table, and form pages! -->
-
-<!-- added navbar class for styling -->
+    <!-- added navbar class for styling -->
 
     <nav class="navbar">
-
-        <ul>
-
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./table.html">Table</a></li>
-            <li><a href="./form.html">Form</a></li>
-
-        </ul>
-
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="table.html">Table</a></li>
+        <li><a href="form.html">Form</a></li>
+      </ul>
     </nav>
 
     <!-- Table including semantic <thead> and <tbody> tags -->
-    
+
     <table>
-<!-- add class when you care changed from caption -->
-        <h1>
+      <h1>Contacts</h1>
 
-            Contacts
+      <thead>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Contact Info</th>
+        </tr>
+      </thead>
 
-        </h1>
+      <tbody>
+        <tr>
+          <td>Billy</td>
+          <td>Bob</td>
+          <td>billybob@gmail.com</td>
+        </tr>
 
-        <thead>
+        <tr>
+          <td>Jim</td>
+          <td>Johnson</td>
+          <td>jimmyjohn@yahoo.com</td>
+        </tr>
 
-            <tr>
-
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th>Contact Info</th>
-
-            </tr>
-
-        </thead>
-
-        <tbody>
-
-                <!-- Fixed semantic error by removing tbody from each row and only having it encapsulate every table row -->
-            <tr>
-
-                <td>Billy</td>
-                <td>Bob</td>
-                <td>billybob@gmail.com</td>
-
-            </tr>
-
-            <tr>
-
-                <td>Jim</td>
-                <td>Johnson</td>
-                <td>jimmyjohn@yahoo.com</td>
-
-            </tr>
-
-            <tr>
-
-                <td>Ben</td>
-                <td>Burns</td>
-                <td>benburns@hotmail.com</td>
-
-            </tr>
-
-        </tbody>
-
+        <tr>
+          <td>Ben</td>
+          <td>Burns</td>
+          <td>benburns@hotmail.com</td>
+        </tr>
+      </tbody>
     </table>
-
-</body>
-
+  </body>
 </html>
